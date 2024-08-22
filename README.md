@@ -1,4 +1,4 @@
-# Unit 9: Advanced Object-Oriented Programming Concepts
+# Advanced Object-Oriented Programming Concepts
 
 Building on the foundational knowledge from the previous unit, this unit covers more advanced OOP concepts such as inheritance, method overriding, and polymorphism. These concepts will be crucial as students move toward building more complex applications.
 
