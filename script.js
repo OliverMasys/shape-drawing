@@ -90,8 +90,26 @@ class ShapeManager {
    - The addShape method to add new shapes to the array and call updateShapeContainer.
    - The updateShapeContainer method to update the UI by rendering each shape in the array.
 */
+constructor() {
+    this.shapes = [];
+    this.shapeContainer = document.getElementById('shapeContainer');
+}
 
+addShape(shape) {
+    if (shape instanceof Shape) {
+        this.shapes.push(shape);
+        this.updateShapeContainer();
+    } else {
+        console.error('Invalid shape');
+    }
+}
 
+updateShapeContainer() {
+    this.shapeContainer.innerHTML = '';
+    this.shapes.forEach(shape => {
+        this.shapeContainer.appendChild(shape.draw());
+    });
+}
 
 
 }
