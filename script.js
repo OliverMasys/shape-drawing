@@ -62,6 +62,20 @@ class Triangle extends Shape {
 // Hint: This class will be very similar to the Circle class.
 // Implement the constructor and the draw() method to define the rectangle's size and color.
 
+class Rectangle extends Shape {
+    constructor(color) {
+        super(color);
+    }
+
+    draw() {
+        const rectangle = document.createElement('div');
+        rectangle.className = 'shape rectangle';
+        rectangle.style.backgroundColor = this.color;
+        rectangle.style.width = '150px';
+        rectangle.style.height = '100px';
+        return rectangle;
+    }
+}
 
 
 
